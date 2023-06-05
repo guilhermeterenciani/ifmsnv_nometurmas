@@ -1,0 +1,14 @@
+{
+  "name": "ifmsnv_nometurmas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "author": "Guilherme Figueiredo Terenciani",
+  "license": "ISC",
+  "devDependencies": {
+    "vitest": "^0.31.1"
+  }
+}
