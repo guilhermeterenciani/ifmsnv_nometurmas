@@ -4,14 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "tsx src/infra/http/express/index.ts",
     "test": "vitest"
   },
   "author": "Guilherme Figueiredo Terenciani",
   "license": "ISC",
   "devDependencies": {
+    "@types/express": "^4.17.17",
+    "axios": "^1.4.0",
+    "tsx": "^3.12.7",
     "vitest": "^0.31.1"
   },
   "dependencies": {
-    "crypto": "^1.0.1"
+    "crypto": "^1.0.1",
+    "express": "^4.18.2"
   }
 }
