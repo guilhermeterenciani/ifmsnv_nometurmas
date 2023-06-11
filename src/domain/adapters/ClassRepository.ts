@@ -3,6 +3,7 @@ export interface ClassRepository{
     findByClassName(className: string): Promise<ClassDTO|undefined>;
 }
 export type ClassDTO = {
+    id: string;
     className: string;
     nickname: string;
 }

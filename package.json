@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "vitest": "^0.31.1"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1"
   }
 }
