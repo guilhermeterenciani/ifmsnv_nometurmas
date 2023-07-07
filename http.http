@@ -1,0 +1,9 @@
+
+POST http://localhost:3333/class HTTP/1.1
+content-type: application/json
+
+{
+    "id": "1",
+    "className": "20231098105A",
+    "nickName": "Turma 1021-A"
+}

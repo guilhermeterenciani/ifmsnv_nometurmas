@@ -4,9 +4,9 @@ export class GetNicknameByClassName {
     constructor(readonly classRepository: ClassRepository) {
     }
     async execute(input: Input): Promise<Output> {
-        const class_ = await this.classRepository.findByClassName(input.className);
-        if(!class_) throw new Error('Turma não encontrada')
-        return {nickName: class_.nickname, className: class_.className};
+        const output = await this.classRepository.findByClassName(input.className);
+        if(!output) throw new Error('Turma não encontrada')
+        return output;
     }
 }
 
@@ -14,6 +14,7 @@ type Input = {
     className: string;
 }
 type Output={
+    id: string;
     nickName: string;
     className: string;
 };

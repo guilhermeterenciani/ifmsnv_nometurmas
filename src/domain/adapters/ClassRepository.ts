@@ -5,5 +5,5 @@ export interface ClassRepository{
 export type ClassDTO = {
     id: string;
     className: string;
-    nickname: string;
+    nickName: string;
 }

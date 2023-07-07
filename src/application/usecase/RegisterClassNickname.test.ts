@@ -6,7 +6,7 @@ it('should register a class nickname',async ()=>{
     const input = {
         id: '1',
         className: '20231098105A',
-        nickname: 'Turma 1021-A'
+        nickName: 'Turma 1021-A'
     }
     
     const registerClassNickname = new RegisterClassNickname(inMemoryClassRepository);
@@ -16,9 +16,9 @@ it('should register a class nickname',async ()=>{
 it('should register another class nickname', async ()=>{
     const input = {
         className: '20231098105B',
-        nickname: 'Turma 1021-B'
+        nickName: 'Turma 1021-B'
     }
     const registerClassNickname = new RegisterClassNickname(inMemoryClassRepository);
-    const {className,nickname} = await registerClassNickname.execute(input);
-    expect({className,nickname}).toEqual(input);
+    const {className,nickName} = await registerClassNickname.execute(input);
+    expect({className,nickName}).toEqual(input);
 })

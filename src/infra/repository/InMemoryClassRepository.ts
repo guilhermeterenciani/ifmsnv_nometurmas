@@ -12,7 +12,7 @@ export class InMemoryClassRepository implements ClassRepository {
                     reject(new Error('Turma não encontrada'));
                 }
                 else{
-                    resolve({id:class_.id, nickname: class_.nickname, className: class_.className});
+                    resolve({id:class_.id, nickName: class_.nickName, className: class_.className});
                 }
                 
             },1000)
