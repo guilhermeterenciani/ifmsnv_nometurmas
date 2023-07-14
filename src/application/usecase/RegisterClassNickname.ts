@@ -15,6 +15,7 @@ interface Input{
     nickName: string;
 }
 interface Output{
+    id: string;
     className: string;
     nickName: string;
 }

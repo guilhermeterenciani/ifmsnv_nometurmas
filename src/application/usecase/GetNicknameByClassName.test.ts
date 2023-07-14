@@ -9,7 +9,8 @@ it('should get a class nickname',async ()=>{
         className: '20231098105A',
         nickName: 'Turma 1021-A'
     }
-    const classInput = new Class(input.className,input.nickName,input.id)
+    const classInput = new Class(input.className,input.nickName,input.id
+        )
     await inMemoryClassRepository.save(classInput);
     const getNicknameByClassName = new GetNicknameByClassName(inMemoryClassRepository);
     const output = await getNicknameByClassName.execute({className: input.className});

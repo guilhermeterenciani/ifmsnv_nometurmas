@@ -15,7 +15,7 @@ export class InMemoryClassRepository implements ClassRepository {
                     resolve({id:class_.id, nickName: class_.nickName, className: class_.className});
                 }
                 
-            },1000)
+            },10)
         });
     }
     save(class_: ClassDTO) {
@@ -23,7 +23,7 @@ export class InMemoryClassRepository implements ClassRepository {
             setTimeout(()=>{
                 this.classes.push(class_)
                 resolve(class_);
-            },1000)
+            },10)
         });
     }
 }
